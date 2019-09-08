@@ -1,0 +1,204 @@
+*{
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Calibri', 'Trebuchet MS', sans-serif
+}
+
+
+.App {
+  text-align: center;
+}
+
+
+
+/*header*/
+.App .head{
+  background-color: rgba(176, 196, 222, 0.5);
+  margin: 0 0 50px;
+  padding: 40px 0;
+  font-size: 2.5em;
+  color: rgb(64, 78, 49)
+}
+
+
+
+/*add form*/
+.App .addform{
+  margin-bottom: 25px
+}
+
+form .add{
+  width: 21em;
+  height: 2.2em;
+  padding: 0 8px;
+  font-size: 1.2rem
+
+}
+
+form .add-button{
+  height: 2.2em;
+  width: 5em;
+  color: white;
+  background-color: rgba(27, 109, 175, 0.911);
+  border: 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px 
+}
+
+form .add-button:hover{
+  background-color: rgba(29, 118, 190, 0.541);
+}
+
+@media(max-width: 646px){
+  form .add{
+    width: 12em;
+    height: 1.9em;
+  }
+  form .add-button{
+    width: 3.5em;
+    height: 1.9em;
+  }
+}
+
+
+
+
+
+/*Create and delete form */
+.form-container{
+  text-align: center;
+  padding: 20px 20%
+}
+.form-container span{
+  display: block;
+  float: left;
+  font-size: 1.8rem;
+  transform: translate(0, 12%)
+}
+
+
+.editform{
+  padding: 20px;
+  background-color: rgba(231, 241, 241, 0.877);
+  text-align: center;
+  font-size: 1.2rem;
+  overflow: hidden
+}
+.editform:hover{
+  background-color: rgb(217, 238, 240);
+}
+
+
+.editform button{
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 2px;
+  width: 80px;
+  float: right;
+}
+
+span.edit{
+  cursor: pointer;
+  margin-left: 5px;
+  
+}
+
+.edit{
+  color: white;
+  background-color: rgba(73, 138, 113, 0.747);
+  padding: 10px
+}
+.edit:hover{
+  background-color: rgb(64, 138, 110);
+}
+
+
+.delete{
+  color: white;
+  background-color: rgba(201, 58, 58, 0.808);
+  padding: 10px
+}
+.delete:hover{
+  background-color: rgb(202, 49, 49);
+}
+
+@media(max-width: 930px){
+  .form-container{
+    padding: 20px 7%;
+  }
+  .editform button{
+    font-size: 14px
+  }
+  .form-container span{
+    font-size: 1.5rem
+  }
+}
+@media(max-width: 465px){
+
+.form-container span, .editform button{
+    float: none;
+    margin: 10px
+  }
+}
+
+
+
+
+/*Update form */
+.updateform{
+  padding: 20px;
+  background-color: rgba(228, 240, 241, 0.877);
+  text-align: center;
+  font-size: 1.2rem;
+  overflow: hidden
+}
+
+.updateform input{
+  display: block;
+  float: left;
+  width: 20em;
+  height: 2em;
+  font-size: 20px;
+  padding-left: 8px
+}
+
+.updateform button{
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 2px;
+  width: 80px;
+  float: right;
+  color: white;
+  background-color: rgba(73, 138, 113, 0.747);
+  padding: 10px
+}
+
+.updateform button:hover{
+  background-color: rgb(64, 138, 110);
+}
+@media(max-width: 700px){
+  .updateform input{
+    width: 15em;
+    height: 2em;
+    font-size: 17px;
+    transform: translate(0, 10%);
+  } 
+  .updateform button{
+    font-size: 14px;
+    width: 70px
+  }
+}
+@media(max-width: 465px){
+  .updateform input, .updateform button{
+    float: none;
+    margin: 5px
+  } 
+  .updateform input{
+    width: 100%
+  }
+}
