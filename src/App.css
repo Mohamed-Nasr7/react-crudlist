@@ -113,6 +113,7 @@ span.edit{
 }
 .edit:hover{
   background-color: rgb(64, 138, 110);
+  box-shadow: 2px 2px 7px rgb(36, 78, 62);
 }
 
 
@@ -123,6 +124,7 @@ span.edit{
 }
 .delete:hover{
   background-color: rgb(202, 49, 49);
+  box-shadow: 2px 2px 7px rgb(138, 33, 33);
 }
 
 @media(max-width: 930px){
